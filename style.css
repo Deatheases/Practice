@@ -14,6 +14,12 @@
     box-sizing: border-box;
 }
 
+.swiper {
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+  }
+
 input{
     cursor: pointer;
 }
@@ -348,9 +354,11 @@ header img{
     position: relative;
     display: flex;
     margin-top: 120px;
+    width: 900px;
+    overflow: hidden;
 }
 
-.feedback-block .slider .arrow-left{
+.feedback-block .slider .swiper-button-prev{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -358,7 +366,7 @@ header img{
     top: 50%;
 }
 
-.feedback-block .slider .arrow-right{
+.feedback-block .slider .swiper-button-next{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -371,7 +379,6 @@ header img{
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 30px;
 }
 
 .feedback-block .slider .slides .slide{
@@ -381,6 +388,10 @@ header img{
     width: 500px;
     box-shadow: 0px 20px 60px #A3A8B226;
     border-radius: 16px;
+}
+
+.feedback-block .slider .slides .slide img{
+    border-radius:  16px 16px 0px 0px;
 }
 
 .feedback-block .slider .slides .slide .review{
@@ -575,6 +586,12 @@ footer .block-3-2{
     right: 0px;
 }
 
+.black{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
 @media screen and (max-width: 320px) {
 
     .main-block, .info-block, .order-block, .feedback-block{
@@ -728,14 +745,14 @@ footer .block-3-2{
         align-items: center;
         flex-direction: column;
     }
-    .feedback-block .slider .arrow-left{
+    .feedback-block .slider .swiper-button-prev{
         width: 50px;
         height: 50px;
         left: 25px;
         bottom: -90px;
         top: unset;
     }
-    .feedback-block .slider .arrow-right{
+    .feedback-block .slider .swiper-button-next{
         top: unset;
         width: 50px;
         height: 50px;

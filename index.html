@@ -107,10 +107,10 @@
             </div>
         </div>
         <div class="slider">
-            <img src="media/arrow-left.png" class="arrow-left">
-            <img src="media/arrow-left.png" class="arrow-right">
-            <div class="slides">
-                <div class="slide" id="slide1">
+            <!-- <img src="media/arrow-left.png" class="swiper-button-prev">
+            <img src="media/arrow-left.png" class="swiper-button-next"> -->
+            <div class="slides swiper-wrapper">
+                <div class="slide swiper-slide">
                     <img src="media/photo1.png">
                     <div class="review">
                         <div class="name">
@@ -126,11 +126,59 @@
                         <p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
                     </div>
                 </div>
-                <div class="slide" id="slide2">
-                    <img src="media/photo1.png">
+                <div class="slide swiper-slide" id="slide2">
+                    <img src="media/photo2.png">
                     <div class="review">
                         <div class="name">
-                            <h2>Brooklyn Simmons</h2>
+                            <h2>Imam White</h2>
+                            <div class="stars">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                            </div>
+                        </div>
+                        <p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="media/photo3.jpg">
+                    <div class="review">
+                        <div class="name">
+                            <h2>Bill Gates</h2>
+                            <div class="stars">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                            </div>
+                        </div>
+                        <p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="media/photo4.jpg">
+                    <div class="review">
+                        <div class="name">
+                            <h2>Rayan Gosling</h2>
+                            <div class="stars">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                                <img src="media/bxs-star 2.png">
+                            </div>
+                        </div>
+                        <p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="media/photo5.jpg">
+                    <div class="review">
+                        <div class="name">
+                            <h2>Arthas</h2>
                             <div class="stars">
                                 <img src="media/bxs-star 2.png">
                                 <img src="media/bxs-star 2.png">
@@ -144,6 +192,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <footer>
         <div class="block-1">
@@ -191,5 +240,27 @@
             </div>
         </div>
     </footer>
+    <script src="swiper-bundle.js"></script>
+    <script>
+        const swiper = new Swiper('.slider', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+        //  navigation: {
+        //    nextEl: '.swiper-button-next',
+        //    prevEl: '.swiper-button-prev',
+        //  },
+         breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            100:{
+                slidesPerView: 1,
+                spaceBetween: 5,
+            }
+         }
+});
+    </script>
 </body>
 </html>

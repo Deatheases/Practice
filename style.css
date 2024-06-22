@@ -89,6 +89,11 @@ header img{
     background-color: #1B1B1D;
     color: #FFFFFF;
     font-size: 15px;
+    transition: transform .3s linear;
+}
+
+.header-activies input:hover{
+    transform: scale(1.1);
 }
 
 .main-block{
@@ -137,6 +142,11 @@ header img{
     background-color: #1B1B1D;
     color: #FFFFFF;
     font-size: 18px;
+    transition: transform .3s linear;
+}
+
+.main-block .slogan-block .main-block-activies input:hover{
+transform: scale(1.1); 
 }
 
 .main-block .slogan-block .main-block-activies a {
@@ -269,7 +279,12 @@ header img{
     border-radius: 50px;
     background-color: #1B1B1D;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 18px;     
+    transition: transform .3s
+}
+
+.info-block .cards .card input:hover{
+    transform: scale(1.1); 
 }
 
 .order-block{
@@ -314,6 +329,11 @@ header img{
     background-color: #1B1B1D;
     color: #FFFFFF;
     font-size: 18px;
+    transition: transform .3s linear; 
+}
+
+.order-block .order-block-info input:hover{
+    transform: scale(1.1); 
 }
 
 .feedback-block{
@@ -358,7 +378,7 @@ header img{
     overflow: hidden;
 }
 
-.feedback-block .slider .swiper-button-prev{
+/* .feedback-block .slider .swiper-button-prev{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -373,7 +393,7 @@ header img{
     right: -50px;
     top: 50%;
     transform: rotate(180deg);
-}
+} */
 
 .feedback-block .slider .slides{
     position: relative;
@@ -557,6 +577,11 @@ footer .block-2-2 input[type=button]{
     background-color: #1B1B1D;
     color: #FFFFFF;
     font-size: 18px;
+    transition: transform .3s linear; 
+}
+
+footer .block-2-2 input[type=button]:hover{
+    transform: scale(1.1); 
 }
 
 footer .block-3{
